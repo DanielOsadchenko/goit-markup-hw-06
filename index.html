@@ -48,7 +48,7 @@
         <!-- Герой -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения</br>для вашего бизнеса</h1>
+                <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -383,6 +383,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="newsletter-block">
+                <b class="subscribe">Подпишитесь на рассылку</b>
+                <label class="newsletter">
+                    <input type="email" name="mail" class="newsletter-input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="newsletter-submit">Подписаться
+                    <svg class="newsletter-icon">
+                        <use href="./images/icons.svg#plane"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </footer>
 
@@ -417,7 +428,7 @@
                     <label class="form-field">
                         Почта
                         <div class="input-block">
-                            <input type="mail" name="mail" class="form-input">
+                            <input type="email" name="mail" class="form-input">
                             <svg class="form-icon">
                                 <use href="./images/icons.svg#mail_2"></use>
                             </svg>
@@ -427,17 +438,16 @@
                         Комментарий
                         <textarea name="comment" rows="6" placeholder="Введите текст" class="comment"></textarea>
                     </label>
-                    <label class="license">
-                        <div class="checkbox-block">
-                            <input type="checkbox" name="license" class="checkbox-input">
-                            Соглашаюсь с рассылкой и принимаю <a href="" class="license-link">Условия договора</a>
-                        </div>
-
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="license" class="checkbox">
+                        <svg class="checkbox-icon">
+                            <use href="./images/icons.svg#check"></use>
+                        </svg>
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="license-link link">Условия договора</a>
                     </label>
+                    <button type="submit" class="submit">Отправить</button>
                 </form>
-
             </div>
-
         </div>
     </div>
     <script src="./js/modal.js"></script>
